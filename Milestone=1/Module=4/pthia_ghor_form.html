@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pitha-ghore.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <h2>
+                Jamal pitha Ghar
+            </h2>
+            <form action="">
+                <label for="name">Your Name</label>
+                <input type="text" name="" id="name">
+            </form>
+
+            <form action="">
+                <fieldset class="basic-info">
+                    <!-- fieldset ki kaj kore seta out put cheack koro -->
+                    <legend >About Your</legend>
+                    <label for="name">What's Your Name:</label>
+                    <input type="text" name="" id="name">
+                    <label for="number">Your Phone Number</label>
+                    <input type="tel" name="" id="number">
+                </fieldset>
+                <!-- id and name same na rakhle kon label koon input er jonno seta buja jay na !! ek label e click korle arek label e kaj korbe -->
+
+                <fieldset class="pitha-info">
+                    <!-- id is used to connect label with input,
+                    name is used to send data to the server. -->
+                    <legend>pitha choose</legend>
+                    <input type="checkbox" name="pitha" id="taler pitha">
+                    <label for="taler pitha">taler pitha</label>
+                    <input type="checkbox" name="pitha" id="kolar pitha">
+                    <label for="kolar pitha">kolar pitha</label>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vorta collection</legend>
+                    <!-- name same rakhar karon- ami chai jei kono akta jate user select korte pare -->
+                    <input type="radio" name="vorta" id="vorta1">
+                    <label for="vorta1">sorishar vorta</label>
+                    <input type="radio" name="vorta" id="vorta2">
+                    <label for="vorta2">moricher vorta</label>
+                </fieldset>
+
+
+                <fieldset>
+                    <!-- box ta kon size dibo - cols and rows er maddhome -->
+                    <legend id="feedback">Feedback</legend>
+                    <textarea name="" id="" cols="70" rows="7"></textarea>
+                </fieldset>
+                <input type="submit" value="submit">
+                <input type="reset" value="data re entry">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

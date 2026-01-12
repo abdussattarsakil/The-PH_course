@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(241, 233, 223);
+    width: 0 auto;
+    margin:5%;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 2em;
+}
+
+td,
+th {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+form {
+    background-color: rgb(202, 193, 182);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+form label {
+    display: block;
+}
+
+.hero-container img {
+    height: 150px;
+    border-radius: 20px;
+}
+
+.hero-container {
+    display: flex;
+    background-color: rgb(185, 174, 164);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-section {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: center;
+}
+
+.card {
+    width: 250px;
+    background-color: rgb(227, 226, 223);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px;
+
+}
+
+.card-container img {
+    width: 100%;
+    border-radius: 20px;
+}

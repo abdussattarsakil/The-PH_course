@@ -1,0 +1,20 @@
+form .basic-info label{
+    display: block;
+     /* block display dile label gulo ekline na theke upor nich hoe jabe */
+     margin-top: 10px;
+     /* upore koto tuku gap rakhbe ta */
+     background-color: aqua; 
+     /* jehutu ami aita sudu matro label er upor kaj kortechi tai background color sudu matro label er change hobe */
+
+}
+
+/* abar ami pura field set er color change korbo */
+form .pitha-info{
+    background-color: aquamarine;
+}
+/* abar ami sudu matro Feedback lekha ta ke color korbo */
+#feedback{
+    color: brown;
+    /* Feedback lekha ta jei legend e ache ami sekhne id die tarpor ai kaj ta korchi */
+}
+

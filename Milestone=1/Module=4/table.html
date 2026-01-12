@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Create</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            /* border collapse na korle sob gula ghor alada alada box hoe thakbe */
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 17px 51px;
+            /* na bujle padding_border topic clear hoe aso */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="auto.html">Home</a></li>
+                <li><a href="table.html">Friends List</a></li>
+                <li><a href="css-flex.html">Flex html</a></li>
+                <li><a href="banner.html">Banner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <table>
+        <caption>My Friends Collections</caption>
+        <thead>
+
+            <th>No.</th>
+            <th>Name</th>
+            <th>age</th>
+            <th>Religion</th>
+
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sanim</td>
+                <td>21</td>
+                <td>Islam</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Mijan</td>
+                <td>23</td>
+                <td>Islam</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Sadin</td>
+                <td>21</td>
+                <td>Islam</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Rana</td>
+                <td>22</td>
+                <td>Islam</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <td colspan="2">My Total Friends = 4</td>
+            <!-- colspan mani se koita column jure thakbe -->
+            <td colspan="2">All Friends are Muslim</td>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

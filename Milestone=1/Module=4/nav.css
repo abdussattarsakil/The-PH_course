@@ -1,0 +1,19 @@
+nav ul{
+     display: flex;
+     /* pasa pasi anar jonno */
+}
+nav li{
+    list-style: none; 
+    margin-right: 50px;
+}
+nav li a{
+    text-decoration: none; 
+    /* anchore er underline off korar jonno */
+    color:black; 
+    /* color use na korle anchore default vabe blue color dekhabe */
+}
+
+nav li:hover{
+    background-color: burlywood;
+    /* hover dile lekhar upor mouse nile jate background color set korte pari  */
+}

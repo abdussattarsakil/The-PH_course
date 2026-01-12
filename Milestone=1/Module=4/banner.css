@@ -1,0 +1,28 @@
+body{
+    background-color: antiquewhite;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    background-color: chocolate;
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 1.25em;
+}
+
+.banner-container img{
+    /* width: 100%; */
+    height: 200px;
+    border-radius: 25px;
+}
+.banner-container button{
+    background-color:bisque;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.banner-container button:hover{
+    background-color: aquamarine;
+}

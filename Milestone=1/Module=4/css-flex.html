@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_layout</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        .user{
+            display: flex;
+            font-size: 2em;
+            justify-content: space-around;
+            gap: 2px;
+            align-items: center;
+        }
+        .user div{
+            border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+        }
+        .Web div{
+         border: 2px solid black;
+         height: 100px;
+         width: 200px;
+         background-color: bisque;
+         
+        }
+        .Web{
+            display: flex;
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+            gap: 10px;
+            }
+
+
+            .vertical
+            {
+             background-color: aquamarine;
+             height: 270px;
+             display: flex; 
+             justify-content: center;
+             align-items: center;
+            }
+            .vertical div{
+                border: 1px solid;
+                background-color: blueviolet;
+                color: bisque;
+                height: 50px;
+                width: 250px;
+                text-align: center;
+                padding: 10px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="auto.html">Home</a></li>
+                <li><a href="table.html">Friends List</a></li>
+                <li><a href="css-flex.html">Flex html</a></li>
+                <li><a href="banner.html">Banner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="user">
+        <!-- .user{$}*5       = dib khular shortcut -->
+        <div class="user">1</div>
+        <div class="user">2</div>
+        <div class="user">3</div>
+        <div class="user">4</div>
+        <div class="user">5</div>
+
+    </div>
+<br>
+    <div class="Web">
+        <div class="user">Web devoloper-1</div>
+        <div class="user">Web devoloper-2</div>
+        <div class="user">Web devoloper-3</div>
+        <div class="user">Web devoloper-4</div>
+        <div class="user">Web devoloper-5</div>
+        <div class="user">Web devoloper-6</div>
+        <div class="user">Web devoloper-7</div>
+        <div class="user">Web devoloper-8</div>
+        <div class="user">Web devoloper-9</div>
+        <div class="user">Web devoloper-10</div>
+        <div class="user">Web devoloper-11</div>
+        <div class="user">Web devoloper-12</div>
+    </div>
+    <br><br>
+
+    <div class="vertical">
+        <div>horizontal vertical class-1</div>
+    </div>
+
+</html>
