@@ -1,0 +1,47 @@
+.container>* {
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.head{
+    background-color: rgb(181, 159, 136);
+}
+
+header {
+    grid-area: header;
+    color: brown;
+    text-align: center;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: main;
+}
+
+aside #side-bar {
+    grid-area: sidebar;
+}
+
+aside #ads-bar {
+    grid-area: adsbar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header      header      header      header"
+        "navbar        main         main        sidebar"
+        "navbar        main         main         adsbar"
+        "footer     footer       footer        footer";
+
+}
