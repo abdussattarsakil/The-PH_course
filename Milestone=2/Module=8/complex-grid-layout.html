@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complex grid with media query</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows:50px repeat(2, 1fr) 50px;
+            gap: 10px;
+        }
+
+        div {
+            background-color: beige;
+            border-radius: 10px;
+        }
+
+        .header {
+            grid-column: span 6;
+        }
+
+        .nav {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .main {
+            grid-column: span 4;
+            grid-row: span 2;
+        }
+
+        .sidebr,
+        .ads {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .footer {
+            grid-column: span 6;
+            grid-row: span 1;
+        }
+
+        @media screen and (max-width:576px) {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section class="grid">
+        <div class="header">
+            <h2>The header</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>Nav 1</li>
+                <li>Nav 2</li>
+                <li>Nav 3</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Main article area</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo quam nisi hic illum delectus porro
+                quisquam cum in iure architecto maxime error facilis quibusdam ipsum cupiditate optio neque? Inventore?
+
+                <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nulla dolor velit quasi inventore possimus officia dolores magnam voluptatem, expedita earum quia rerum fuga, qui fugit necessitatibus ratione in mollitia!Lorem
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aperiam deleniti nemo quasi quibusdam? Ducimus veniam, nam facere quos quod velit quisquam ipsum pariatur fugiat saepe reiciendis quidem doloremque suscipit!
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum, eveniet impedit, quo minus necessitatibus, facilis ad qui omnis dignissimos sunt! Quia facilis molestiae at inventore perspiciatis explicabo expedita corporis.</h1>
+                <br><br>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dicta. Natus recusandae fugiat esse ea, eveniet voluptates repellat eos ratione doloremque quos in cum unde, deserunt pariatur ab, delectus eaque?</h1> -->
+            </p>
+        </div>
+        <div class="sidebar">
+            <h2>side bar</h2>
+
+        </div>
+        <div class="ads">
+            <h2> advertising</h2>
+
+        </div>
+        <div class="footer">
+            <h2>the footer</h2>
+        </div>
+    </section>
+</body>
+
+</html>
