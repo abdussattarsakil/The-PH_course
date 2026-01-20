@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body {
+            margin: 100px 150px;
+        }
+
+        .content {
+            background-color: antiquewhite;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr) 50px 50px;
+            gap: 20px;
+        }
+
+        .wide-layout {
+            grid-column: span 1;
+            grid-row: span 5;
+            height: 700px;
+        }
+
+        .normal-layout {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .nav-layout {
+            grid-column: span 3;
+            grid-row: span 1;
+            height: 50px;
+        }
+
+        @media screen and (max-width:576px) {
+            body {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content wide-layout">1</div>
+        <div class="content normal-layout">2</div>
+        <div class="content normal-layout">3</div>
+        <div class="content normal-layout">4</div>
+        <div class="content normal-layout">5</div>
+        <div class="content normal-layout">6</div>
+        <div class="content normal-layout">7</div>
+        <div class="content normal-layout">8</div>
+        <div class="content normal-layout">9</div>
+        <div class="content normal-layout">10</div>
+        <div class="content nav-layout">11</div>
+        <div class="content nav-layout">12</div>
+    </div>
+</body>
+
+</html>
