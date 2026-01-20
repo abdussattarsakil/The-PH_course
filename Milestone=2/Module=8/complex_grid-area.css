@@ -1,11 +1,10 @@
 .container>* {
     background-color: antiquewhite;
-    margin: 10px;
     border-radius: 10px;
     padding: 10px;
 }
 
-.head{
+.head {
     background-color: rgb(181, 159, 136);
 }
 
@@ -44,4 +43,28 @@ footer {
         "navbar        main         main         adsbar"
         "footer     footer       footer        footer";
 
+    gap: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "navbar"
+            "main"
+            "sidebar"
+            "adsbar"
+            "footer";
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .container {
+        grid-template-areas:
+            "header      header     header"
+            "navbar      navbar     navbar"
+            "sidebar     main       main"
+            "adsbar      footer     footer";
+
+    }
 }
