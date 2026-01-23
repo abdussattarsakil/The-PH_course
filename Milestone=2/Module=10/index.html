@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overflow{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            border: 2px dotted red;
+            padding:  20px;
+            width: 400px;
+            height: 300px;
+
+        }
+
+        .box-1 {
+            border: 1px solid gray;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .box-2 {
+            overflow-y: auto;
+            /* auto er kaj hocche jodi dorkar hoy tahole scroll bar dekhabe */
+        }
+        
+        .text-ellipsis{
+            border: 2px dotted seagreen;
+            margin: 20px;
+            width: 400px;
+            height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="overflow">
+        <div class="box-1">
+            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet architecto, officiis, illum repellat
+                sit odio alias minus voluptas porro pariatur facilis recusandae iure omnis nulla, dignissimos obcaecati
+                rerum repudiandae. Id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate dolor
+                autem pariatur sit facere, mollitia dolorem ab modi. Fugiat itaque voluptate reiciendis debitis tempora,
+                iusto soluta non. Excepturi, nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                repellendus atque enim temporibus provident non facere impedit. Corporis doloremque culpa sint ratione?
+                Officia recusandae nihil omnis mollitia provident. Dolorem, expedita?</p>
+        </div>
+        <div class="box-2">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ipsum quo illum facilis optio,
+                repudiandae enim ipsa temporibus. In, fugit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, et quo, iste iure accusamus maxime molestias iusto incidunt inventore sed consectetur aut magni, fugit odio? Voluptates similique corporis minima porro!Loremlor    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, corporis veniam vitae itaque nisi hic dolorem laborum iusto? Cumque alias quasi deleniti nulla facilis repellendus nihil officiis itaque eius voluptas!
+            </p>
+        </div>
+    </section>
+    <section >
+       <p title="this paragraph are lot of lorem words" class="text-ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nostrum earum eveniet eum. Modi ut blanditiis iste tenetur non placeat explicabo illo, possimus sed ratione ipsa excepturi nesciunt fuga sunt? </p>
+    </section>
+</body>
+
+</html>
