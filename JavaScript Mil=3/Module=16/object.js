@@ -5,6 +5,8 @@ const colors = {
     "golden rod": '#daa520'
 };
 console.log(colors["golden rod"]);
+//জাভাস্ক্রিপ্টে অবজেক্টের কোনো ভ্যালু বের করার নিয়ম হলো:
+//  Object_Name[Key_Name]     --aita holo Bracket Notation
 
 
 //object e key er value dekha
