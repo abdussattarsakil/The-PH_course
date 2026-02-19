@@ -1,5 +1,9 @@
 let list = document.getElementById("players-container")
-list.style.background="lightCyan";
+list.style.background="lightBlue";
+list.style.padding="20px"
+list.style.borderRadius="50px"
+list.style.border="solid red"
+list.style.marginBottom="20px"
 //---------------------------------------
 //create element and set innerText or innerHTML
 const newChild = document.createElement("li");

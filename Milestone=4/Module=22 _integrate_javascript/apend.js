@@ -13,3 +13,6 @@ const foodAdd=document.querySelector("#food-items");
 const newList=document.createElement("li");
 newList.innerHTML= "fish";
 foodAdd.appendChild(newList);
+
+let foodContainer = document.querySelector("#food-container");
+foodContainer.classList.add("bg-color");
