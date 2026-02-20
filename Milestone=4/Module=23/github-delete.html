@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(85, 82, 78);
+        }
+
+        h1,
+        h3 {
+            color: rgba(22, 194, 185, 0.895);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Are you sure ? you delete your account??</h1>
+    <h3>Write "delete" for permanently delete your account </h3>
+    <input placeholder="Write- delete" type="text" name="" id="text-area">
+    <button id="btn" disabled>Delete</button>
+
+
+    <script>
+        document.getElementById("text-area")
+            .addEventListener("keyup", function (event) {
+                const text = event.target.value;
+                const button=document.getElementById("btn");
+                if(text==="delete"){
+                    //console.log("right")
+                    button.removeAttribute("disabled");
+                }
+                else{
+                    button.setAttribute("disabled",true);
+                }
+            })
+
+    </script>
+</body>
+
+</html>
