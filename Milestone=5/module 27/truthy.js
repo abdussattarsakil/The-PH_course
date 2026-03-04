@@ -9,3 +9,4 @@
  * NaN -Not a Number(number type এর একটি special value)
  */
 
+//baki gulo sob truthy value
