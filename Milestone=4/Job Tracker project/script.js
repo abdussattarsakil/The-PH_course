@@ -213,3 +213,5 @@ document.getElementById('jobs-container')
             jobCount();
         }
     });
+
+    ///  https://claude.ai/chat/c3164069-c115-4930-b8e6-4a18f3028be1
