@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>local_storage</title>
+    <style>
+        body{
+            background-color: rgba(2, 2, 2, 0.435);
+        }
+    </style>
 </head>
 <body>
     <button onclick="addNumberToLs()">Add To Local Storage</button>
+    <button onclick="getNumberFromLS()">Get from local storage</button>
+    <button onclick="clearDiv()">Clear Number</button>
 
+    <div id="numberDiv">
+
+    </div>
 
     <script src="scripts/local_storage.js"></script>
 </body>
